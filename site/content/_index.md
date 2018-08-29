@@ -1,6 +1,6 @@
 ---
 title: "Rob Pointon - Painting from life"
-subtitle: xyz
+subtitle: tweak to admin 3
 image: /img/home-jumbotron.jpg
 blurb:
     heading: Why Kaldi?
