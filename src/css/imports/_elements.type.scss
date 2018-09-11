@@ -1,16 +1,16 @@
 html { 
-	color: --near-black;
+	color: $near-black;
 }
 
 body {
-	@include rem(font-size, --font-size-normal);
+	@include rem(font-size, $font-size-normal);
 	@include rem(line-height, 3.3rem);
 	@include rem(margin, 0 0 3.3rem);
-	font-weight: --light-weight;
+	font-weight: $light-weight;
 }
 
 a {
-	color: --link-blue;
+	color: $link-blue;
 	text-decoration: none; 
 }
 
@@ -22,29 +22,29 @@ a:hover {
    ========================================================================== */
 
 h1, h2,h3,h4,h5,h6 { 
-	font-family: --brandfont;
+	font-family: $brandfont;
 }
 
 h2,h3,h4,h5,h6 { 
-	@include rem(font-size, --font-size-medium);
-	font-weight: --light-weight;
+	@include rem(font-size, $font-size-medium);
+	font-weight: $light-weight;
 	@include rem(line-height, 3.6rem 0); 
 	@include rem(margin, 0 0 0.7272rem);
 }
 
 h1, .txt-xlarge { 
-	@include rem(font-size, --font-size-large);
-	font-weight: --light-weight;
+	@include rem(font-size, $font-size-large);
+	font-weight: $light-weight;
 	@include rem(line-height, 5.5rem);
 	@include rem(margin, 0 0 0.8rem); 
-	color: --near-black;
+	color: $near-black;
 }
 
 
 
 .txt-large { 
-	@include rem(font-size, --font-size-medium);
-	font-weight: --heavy-weight;
+	@include rem(font-size, $font-size-medium);
+	font-weight: $heavy-weight;
 	@include rem(line-height, 3.6rem 0); 
 	@include rem(margin, 0 0 0.7272rem);
 } 
@@ -57,7 +57,7 @@ h1, .txt-xlarge {
 } 
 
 .txt-normal { 
-	@include rem(font-size, --font-size-normal);
+	@include rem(font-size, $font-size-normal);
 } 
 
 .txt-small { 
@@ -70,14 +70,14 @@ h1, .txt-xlarge {
 
 
 blockquote {
-	color: --gray-medium;
+	color: $gray-medium;
 	margin: 0 0 1.25em;
 	padding: 0.5625em 1.25em 0.625em 1.1875em;
-	border-left: 5px solid --red-ferrari;
+	border-left: 5px solid $red-ferrari;
 	@include rem(font-size, 3rem);
 	@include rem(line-height, 3.6rem);
 	@include rem(margin, 0 0 3.3rem);
-	font-family: --brandfont;
+	font-family: $brandfont;
 	font-style: italic;
 }
 
@@ -86,26 +86,26 @@ blockquote {
 }
 
 
-@media (--small-and-down) {
+@media #{$small-and-down} {
 	body {
-		@include rem(font-size, --font-size-normal / 1.2);
+		@include rem(font-size, $font-size-normal / 1.2);
 		@include rem(line-height, 3.3rem / 1.2);
 	}
 
 	h2,h3,h4,h5,h6 { 
-		@include rem(font-size, --font-size-medium / 1.2);
+		@include rem(font-size, $font-size-medium / 1.2);
 		@include rem(line-height, 3.6rem/1.2 0); 
 	}
 
 	h1, .txt-xlarge { 
-		@include rem(font-size, --font-size-large / 1.5);
+		@include rem(font-size, $font-size-large / 1.5);
 		@include rem(line-height, 5.5rem / 1.2);
 	}
 
 
 
 	.txt-large { 
-		@include rem(font-size, --font-size-medium / 1.2);
+		@include rem(font-size, $font-size-medium / 1.2);
 		@include rem(line-height, 3.6rem / 1.2 0 ); 
 	} 
 
@@ -116,7 +116,7 @@ blockquote {
 	} 
 
 	.txt-normal { 
-		@include rem(font-size, --font-size-normal / 1.2);
+		@include rem(font-size, $font-size-normal / 1.2);
 	} 
 }
 

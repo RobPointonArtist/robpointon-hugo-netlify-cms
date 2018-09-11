@@ -6,6 +6,7 @@
 
 
 /*  TOOLS - Global Mixins such as font-sizing or media queries  */ 
+@import './imports/_tools.functions';
 @import './imports/_tools.rem';
 @import './imports/_tools.prefixer';
 
