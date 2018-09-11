@@ -12,6 +12,30 @@ import svgmin from "gulp-svgmin";
 import inject from "gulp-inject";
 import cssnano from "cssnano";
 
+//
+// Start of custom
+//
+
+import sass from 'gulp-sass';
+import autoprefixer from 'gulp-autoprefixer';
+import sourcemaps from 'gulp-sourcemaps';
+
+const dirs = {
+  src: 'src',
+  dest: 'build'
+};
+
+const sassPaths = {
+  src: './src/css/*.scss',
+  dest: './dist/css'
+};
+
+
+
+//
+// End of of custom
+//
+
 const browserSync = BrowserSync.create();
 const hugoBin = `./bin/hugo.${process.platform === "win32" ? "exe" : process.platform}`;
 const defaultArgs = ["-d", "../dist", "-s", "site"];
@@ -25,16 +49,15 @@ gulp.task("hugo-preview", (cb) => buildSite(cb, ["--buildDrafts", "--buildFuture
 gulp.task("build", ["css", "js", "hugo"]);
 gulp.task("build-preview", ["css", "js", "hugo-preview"]);
 
-gulp.task("css", () => (
-  gulp.src("./src/css/*.css")
-    .pipe(postcss([
-      cssImport({from: "./src/css/main.css"}),
-      cssnext(),
-      cssnano(),
-    ]))
-    .pipe(gulp.dest("./dist/css"))
-    .pipe(browserSync.stream())
-));
+gulp.task('css', () => {
+  return gulp.src(sassPaths.src)
+    .pipe(sourcemaps.init())
+    .pipe(sass.sync().on('error', sass.logError))
+    .pipe(autoprefixer())
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest(sassPaths.dest));
+});
+
 
 gulp.task("js", (cb) => {
   const myConfig = Object.assign({}, webpackConfig);
