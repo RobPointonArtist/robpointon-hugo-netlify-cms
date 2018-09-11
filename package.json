@@ -14,7 +14,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "babel-core": "^6.26.3",
     "babel-eslint": "^8.0.0",
     "babel-loader": "^7.0.0",
     "babel-plugin-syntax-object-rest-spread": "^6.13.0",
@@ -50,6 +49,7 @@
     "whatwg-fetch": "^2.0.0"
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
     "gulp-inject": "^4.2.0",
     "gulp-svgmin": "^1.2.3",
     "gulp-svgstore": "^6.1.0",

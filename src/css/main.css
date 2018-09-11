@@ -1,44 +1,44 @@
 @charset "utf-8";
 
-/* SETTINGS - Global settings / variables such as $blue or $text-heading-size-1  */
+/* SETTINGS - Global settings / variables such as $blue or $text-heading-size-1   */ 
 
-@import "import/settings.global.scss";
-
-
-/*  TOOLS - Global Mixins such as font-sizing or media queries */
-@import "import/tools.rem.scss";
-@import "import/tools.prefixer.scss";
+@import './imports/_settings.global';
 
 
-/*  GENERIC - High level far reaching styles such as css reset */
-@import "import/generic.normalize";
+/*  TOOLS - Global Mixins such as font-sizing or media queries 
+@import './imports/_tools.rem';
+@import './imports/_tools.prefixer';
+*/ 
+
+/*  GENERIC - High level far reaching styles such as css reset */ 
+@import './imports/_generic.normalize';
 
 
-/* ELEMENTS - Bare HTML such as headings (H1, H2...), a etc */
-@import "import/elements.type.scss";
+/* ELEMENTS - Bare HTML such as headings (H1, H2...), a etc  */ 
+@import './imports/_elements.type';
 
 
-/* OBJECTS - Styling of none cosmetic design patterns such as .wrapper, .grid etc */
-@import "import/objects.grid.scss";
+/* OBJECTS - Styling of none cosmetic design patterns such as .wrapper, .grid etc  
+@import './imports/_objects.grid';
 
 
-/* COMPONENTS - Explicit designed pieces of the DOM - most of development does here */
-@import "import/components.gamma.scss";
-@import "import/components.logo.scss";
-@import "import/components.nav.scss";
-@import "import/components.loadmore.scss";
-@import "import/components.footer.scss";
-@import "import/components.photo-page.scss";
-@import "import/components.tag-list.scss";
-@import "import/components.tag-listing-page.scss";
+/* COMPONENTS - Explicit designed pieces of the DOM - most of development does here 
+@import './imports/components.gamma.scss';
+@import './imports/components.logo.scss';
+@import './imports/components.nav.scss';
+@import './imports/components.loadmore.scss';
+@import './imports/components.footer.scss';
+@import './imports/components.photo-page.scss';
+@import './imports/components.tag-list.scss';
+@import './imports/components.tag-listing-page.scss';
 
 
 
-/* TRUMPS - e.g text-center {text-align:center!important;} */
-/* @import "import/trumps.clearfix.scss"; */
-@import "import/trumps.accessibility-text.scss";
-@import "import/trumps.utilities.scss";
-/* @import "import/trumps.shame.scss"; */
+/* TRUMPS - e.g text-center {text-align:center!important;} 
+/* @import './imports/trumps.clearfix.scss'; 
+@import './imports/trumps.accessibility-text.scss';
+@import './imports/trumps.utilities.scss';
+/* @import './imports/trumps.shame.scss'; */
 
 /* Debugging */
 @import './imports/_debug-children';
