@@ -30,8 +30,6 @@ const sassPaths = {
   dest: './dist/css'
 };
 
-
-
 //
 // End of of custom
 //

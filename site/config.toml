@@ -1,3 +1,9 @@
-baseurl = "/"
-languageCode = "en-us"
-title = "Rob Pointon Artist - Home"
+baseURL = "https://www.robpointon.co.uk/"
+languageCode = "en"
+title = "Rob Pointon Artist"
+copyright = "All rights reserved - 2018"
+
+[params]
+  description = "Welcome to my website"
+  metadescription = "Used as 'description' meta tag for both home and index pages. If not set, 'description' will be used instead"
+  author = "Rob Pointon"
