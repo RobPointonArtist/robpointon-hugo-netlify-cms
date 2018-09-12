@@ -1,9 +1,28 @@
 <!doctype html>
-<html lang="en">
-  {{ partial "head" . }}
-  <body class="sans-serif">
-    {{ partial "nav" . }}
-    {{ block "main" . }}{{ end }} 
-    {{ partial "footer" . }} 
-  </body>
+<html lang="{{.Site.LanguageCode}}">
+
+	{{ partial "head" . }}
+
+	<body class="sans-serif">
+		<!-- Start Viewport -->
+		<div id="viewport">
+			<!-- Start View-Container -->
+			<div id="view-container">
+
+				{{ partial "header" . }}
+				{{ partial "navigation" . }}
+
+				<div class="page-content slide" id="main">
+					<div class="wrapper">
+						{{ block "main" . }}{{ end }} 
+					</div>
+		        </div>
+				
+				{{ partial "footer" . }} 
+
+			</div><!-- End View-Container -->
+		</div><!-- End Viewport -->
+		{{ partial "footer-scripts" . }}
+
+	</body>
 </html>
