@@ -13,7 +13,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Tscitle", name: "title", widget: "string"}
       - {label: "Price", name: "price", widget: "string"}
       - {label: "Pscscublish Date", name: "date", widget: "datetime"}
-      - {label: "Intro Blurbby", name: "description", widget: "text"}
+      - {label: "Intro Blurbby Blurbby", name: "description", widget: "text"}
       - {label: "Iscsmage", name: "image", widget: "image", required: false}
       - {label: "Bscsody", name: "body", widget: "markdown"}
   - name: "pages"
