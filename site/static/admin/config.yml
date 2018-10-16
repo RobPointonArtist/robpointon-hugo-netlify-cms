@@ -16,6 +16,17 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Intro Blurbby Blurbby", name: "description", widget: "text"}
       - {label: "Iscsmage", name: "image", widget: "image", required: false}
       - {label: "Bscsody", name: "body", widget: "markdown"}
+  - name: "painting" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Painting" # Used in the UI, ie.: "New Post"
+    folder: "site/content/paintings" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Tscitle", name: "title", widget: "string"}
+      - {label: "Price", name: "price", widget: "string"}
+      - {label: "Pscscublish Date", name: "date", widget: "datetime"}
+      - {label: "Intro Blurbby Blurbby", name: "description", widget: "text"}
+      - {label: "Iscsmage", name: "image", widget: "image", required: false}
+      - {label: "Bscsody", name: "body", widget: "markdown"}
   - name: "pages"
     label: "Pages"
     files:
