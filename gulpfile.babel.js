@@ -53,7 +53,8 @@ gulp.task('css', () => {
     .pipe(sass.sync().on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(sassPaths.dest));
+    .pipe(gulp.dest(sassPaths.dest))
+    .pipe(browserSync.stream());
 });
 
 
@@ -94,7 +95,7 @@ gulp.task("server", ["hugo", "css", "js", "svg"], () => {
     }
   });
   gulp.watch("./src/js/**/*.js", ["js"]);
-  gulp.watch("./src/css/**/*.css", ["css"]);
+  gulp.watch("./src/css/**/*.scss", ["css"]);
   gulp.watch("./site/static/img/icons-*.svg", ["svg"]);
   gulp.watch("./site/**/*", ["hugo"]);
 });
