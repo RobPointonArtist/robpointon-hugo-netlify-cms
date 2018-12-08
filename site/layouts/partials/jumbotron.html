@@ -1,18 +1,23 @@
-<div class="pv5 pv6-l ph3 bg-center cover" style="background-image: url('{{.imageUrl}}')">
-  <div class="mw7 center ph3">
-    <div class="db mb3">
-      <div class="mw7 relative bg-fix-primary mb3">
-        <h1 class="f2 f1-l b di lh-title mb3 white mw6 bg-primary">
-          {{.title}}
-        </h1>
+<div class="hero-banner">
+    <div class="hero-banner__inner"> 
+      <div class="hero-banner__background hero-banner__background--video">
+          <video autoplay="autoplay" muted="muted" loop="loop" poster="https://www.tate.org.uk/sites/default/files/tuner_banner_v2.jpg">
+              <source class="video--webm" src="https://www.tate.org.uk/sites/default/files/tuner_banner_v2.webm" type="video/webm">
+              <source class="video--mp4" src="https://www.tate.org.uk/sites/default/files/tuner_banner_v2.m4v" type="video/mp4"> 
+          </video>
       </div>
-      <div class="mw7 relative bg-fix-primary">
-        {{ if .subtitle }}
-        <p class="b f4 di lh-title mb3 white mw6 bg-primary">
-          {{.subtitle}}
-        </p>
-        {{ end }}
-      </div>
-    </div>
+      <style>video::-webkit-media-controls-start-playback-button {display:none !important;}</style> 
+
+    <div class="hero-banner__content--wrapper">
+        <div class="hero-banner__content--inner">
+            <div class="hero-banner__content--text">
+                <h2 class="txt-xlarge">{{.title}}</h2>
+                {{ if .subtitle }}
+                    <p>{{.subtitle}}</p>
+                {{ end }}
+                <p class="btn-row btn-row--align__center"><a class="btn btn--type__secondary text-uppercase" href="#"><i class="btn__icon icon--arrow-right"> </i><span class="btn__text">View now</span></a></p> 
+            </div>
+        </div>
+    </div>     
   </div>
 </div>
