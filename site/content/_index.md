@@ -1,6 +1,6 @@
 ---
 title: Rob Pointon - Painting from life
-subtitle: tweak to admin 4
+subtitle: this is edited via the cms
 image: /img/home-jumbotron.jpg
 video-webm: 'https://www.tate.org.uk/sites/default/files/tuner_bannercxvsvsc_v2.webm'
 video-mp4: 'https://www.tate.org.uk/sites/default/files/tuner_cxcacascbanner_v2.m4v'
