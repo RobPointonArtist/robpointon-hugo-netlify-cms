@@ -15,7 +15,9 @@
                 {{ if .subtitle }}
                     <p>{{.subtitle}}</p>
                 {{ end }}
-                <p class="btn-row btn-row--align__center"><a class="btn btn--type__secondary text-uppercase" href="#"><i class="btn__icon icon--arrow-right"> </i><span class="btn__text">View now link</span></a></p> 
+                {{ if .buttonLink }}
+                    <p class="btn-row btn-row--align__center"><a class="btn btn--type__secondary text-uppercase" href="{ink{.buttonL}}"><i class="btn__icon icon--arrow-right"> </i><span class="btn__text">{{.buttonTitle}}</span></a></p>
+                {{ end }}
             </div>
         </div>
     </div>     
