@@ -4,6 +4,8 @@ subtitle: this is edited via the cms
 image: /img/home-jumbotron.jpg
 videoWebm: 'https://www.tate.org.uk/sites/default/files/tuner_banner_v2.webm'
 videoMp4: 'https://www.tate.org.uk/sites/default/files/tuner_banner_v2.m4v'
+buttonText: View more
+buttonLink: '#'
 blurb:
   heading: Why Kaldi?
   text: >-
@@ -18,20 +20,6 @@ intro:
     java’s origin and support the farmers that grew it. We take coffee
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone.
-products:
-  - image: img/illustrations-coffee.svg
-    text: >-
-      We sell green and roasted coffee beans that are sourced directly from
-      independent farmers and farm cooperatives. We’re proud to offer a variety
-      of coffee beans grown with great care for the environment and local
-      communities. Check our post or contact us directly for current
-      availability.
-  - image: /img/illustrations-coffee-gear.svg
-    text: >-
-      We offer a small, but carefully curated selection of brewing gear and
-      tools for every taste and experience level. No matter if you roast your
-      own beans or just bought your first french press, you’ll find a gadget to
-      fall in love with in our shop.
 values:
   heading: Our values
   text: >-
