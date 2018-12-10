@@ -2,7 +2,7 @@
 {{ partial "header" . }}
 {{ partial "navigation" . }}
 
-{{ partial "video-hero-banner" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle "button_link" .Params.button_link "button_text" .Params.button_text "video_webm" .Params.video_webm "video_mp4" .Params.video_mp4) }}
+{{ partial "hero-banner-video" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle "button_link" .Params.button_link "button_text" .Params.button_text "video_webm" .Params.video_webm "video_mp4" .Params.video_mp4) }}
 
 {{ partial "2-up" .Params }}
 
