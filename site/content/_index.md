@@ -1,11 +1,12 @@
 ---
 title: Rob Pointon - Painting from life
+title2: title 2
 subtitle: this is edited via the cms 3
 image: /img/home-jumbotron.jpg
 buttonText: View more button
-buttonlink: link
+buttonlink: /exhibitions
 videoWebm: 'https://www.tate.org.uk/sites/default/files/tuner_banner_v2.webm'
-videoMp4: video/rob-quatar-edit-compress.m4v
+videoMp4: 'https://www.tate.org.uk/sites/default/files/tuner_banner_v2.m4v'
 blurb:
   heading: Why Kaldi?
   text: >-
