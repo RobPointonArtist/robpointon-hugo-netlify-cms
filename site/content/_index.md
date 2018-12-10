@@ -1,6 +1,6 @@
 ---
 title: Rob Pointon - Painting from life
-subtitle: this is edited via the cms 3
+subtitle: this is edited via the cms 4
 image: /img/home-jumbotron.jpg
 button_text: View more
 button_link: /exhibitions
