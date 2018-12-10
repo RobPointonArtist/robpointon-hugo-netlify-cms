@@ -1,11 +1,11 @@
 ---
 title: Rob Pointon - Painting from life
 subtitle: this is edited via the cms 6
-image: /img/home-jumbotron.jpg
+image: /img/10-16-sunset-over-the-corniche.jpg
 button_text: View more
 button_link: /exhibitions
-video_Webm: 'https://www.tate.org.uk/sites/default/files/tuner_banner_v2.webm'
-video_Mp4: 'https://www.tate.org.uk/sites/default/files/tuner_banner_v2.mv4'
+video_Webm: /video/rob-quatar-edit-compress.webm
+video_Mp4: /video/rob-quatar-edit-compress.m4v
 blurb:
   heading: Why Kaldi?
   text: >-
