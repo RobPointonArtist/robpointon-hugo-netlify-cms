@@ -2,8 +2,8 @@
     <div class="hero-banner__inner"> 
       <div class="hero-banner__background hero-banner__background--video">
           <video autoplay="autoplay" muted="muted" loop="loop" poster="https://www.tate.org.uk/sites/default/files/tuner_banner_v2.jpg">
-              <source class="video--webm" src="{{ .videoWebm }}" type="video/webm">
-              <source class="video--mp4" src="{{ .videoMp4 }}" type="video/mp4"> 
+              <source class="video--webm" src="{{ .video_Webm }}" type="video/webm">
+              <source class="video--mp4" src="{{ .video_Mp4 }}" type="video/mp4"> 
           </video>
       </div>
       <style>video::-webkit-media-controls-start-playback-button {display:none !important;}</style> 
@@ -12,14 +12,12 @@
         <div class="hero-banner__content--inner">
             <div class="hero-banner__content--text">
                 <h2 class="txt-xlarge">{{.title}}</h2>
-                <h2 class="txt-xlarge">{{.videoMp4}}</h2>
                 {{ if .subtitle }}
                     <p>{{.subtitle}}</p>
                 {{ end }}
-                {{ if .buttonLink }}
-                    <p class="btn-row btn-row--align__center"><a class="btn btn--type__secondary text-uppercase" href="{{.linkbutton}}"><i class="btn__icon icon--arrow-right"> </i><span class="btn__text">{{.buttonTitle}}</span></a></p>
+                {{ if .button_link }}
+                    <p class="btn-row btn-row--align__center"><a class="btn btn--type__secondary text-uppercase" href="{{.button_link}}"><i class="btn__icon icon--arrow-right"> </i><span class="btn__text">{{.button_link}}</span></a></p>
                 {{ end }}
-                hello
             </div>
         </div>
     </div>     
