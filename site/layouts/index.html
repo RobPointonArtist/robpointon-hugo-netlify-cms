@@ -4,6 +4,8 @@
 
 {{ partial "hero-banner-video" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle "button_link" .Params.button_link "button_text" .Params.button_text "video_webm" .Params.video_webm "video_mp4" .Params.video_mp4) }}
 
+{{ partial "gamma" . }}
+
 {{ partial "2-up" .Params }}
 
 {{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Read more" "buttonLink" "/values") }}
