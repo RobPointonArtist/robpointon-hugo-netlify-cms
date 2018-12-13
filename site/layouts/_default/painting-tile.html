@@ -1,0 +1,7 @@
+<a href="{{ .Permalink }}" class="">
+	<h2 class="painiting-title">{{ .Title }}</h2>
+	<p class="">{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
+	<p class="">{{ .Description }}</p>
+	<img src="{{ .Params.image }}" alt="{{ .Description }}"/>
+	<p class="">Read more →</p>
+</a>
