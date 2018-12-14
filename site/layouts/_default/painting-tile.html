@@ -1,7 +1,14 @@
-<a href="{{ .Permalink }}" class="">
-	<h2 class="painiting-title">{{ .Title }}</h2>
-	<p class="">{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
-	<p class="">{{ .Description }}</p>
-	<img src="{{ .Params.image }}" alt="{{ .Description }}"/>
-	<p class="">Read more →</p>
-</a>
+<li>
+	<div data-alt="View full size version of {{ .Title }}" data-description="<h3>POST TITLE</h3><a href=&quot;{{ .Permalink }}&quot; class=&quot;gamma-link&quot;>View full post</a>" data-max-width="1300" data-max-height="1350">
+	  <div data-src="{{ .Params.image }}" data-min-width="1300"></div>
+	  <div data-src="{{ .Params.image }}" data-min-width="1000"></div>
+	  <div data-src="{{ .Params.image }}" data-min-width="700"></div>
+	  <div data-src="{{ .Params.image }}" data-min-width="300"></div>
+	  <div data-src="{{ .Params.image }}" data-min-width="200"></div>
+	  <div data-src="{{ .Params.image }}" data-min-width="140"></div>
+	  <div data-src="{{ .Params.image }}"></div>
+	  <noscript>
+	    <img src="{{ .Params.image }}" alt="View full size version of {{ .Title }}"/>
+	  </noscript>
+	</div>
+</li>
