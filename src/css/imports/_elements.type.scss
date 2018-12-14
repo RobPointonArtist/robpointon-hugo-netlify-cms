@@ -68,6 +68,10 @@ h1, .txt-xlarge {
 	@include rem(font-size, 1rem);
 } 
 
+.section-title {
+    padding-top: 1em;
+    padding-bottom: .5em;
+}
 
 blockquote {
 	color: $gray-medium;
