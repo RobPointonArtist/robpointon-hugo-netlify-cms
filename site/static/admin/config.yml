@@ -41,7 +41,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "homepage Button link", name: button_link, widget: string}
           - {label: "homepage Video WEBM", name: video_webm, widget: string}
           - {label: "homepage Video MP4", name: video_mp4, widget: string}
-          {label: "Manual PDF", name: "manual_pdf" widget: "file" default: "/uploads/general-manual.pdf"
+          - {label: "Manual PDF", name: "manual_pdf" widget: "file" default: "/uploads/general-manual.pdf"
            media_library:
            config:
            multiple: true}
