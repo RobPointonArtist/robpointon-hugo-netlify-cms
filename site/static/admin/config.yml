@@ -43,7 +43,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "homepage Video MP4", name: video_mp4, widget: string}
           - {label: "Manual PDF", name: "manual_pdf", widget: "file", default: "/uploads/general-manual.pdf",
               media_library:
-                config:
+                config:,
                   multiple: true}
           - {label: "homepage Blurb", name: blurb, widget: object, fields: [
               {label: "Heading", name: "heading", widget: string},
