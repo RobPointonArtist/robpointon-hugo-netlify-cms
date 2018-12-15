@@ -5,7 +5,7 @@
 	<div class="gamma-container gamma-loading" id="gamma-container">
 		
 		<ul class="gamma-gallery">
-			{{ range first 4 (where .Data.Pages "Type" "post") }}
+			{{ range first 20 (where .Data.Pages "Type" "post") }}
 
 				{{ .Render "painting-tile" }}
 
