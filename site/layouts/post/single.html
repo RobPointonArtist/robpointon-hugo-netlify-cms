@@ -1,15 +1,27 @@
 {{ define "main" }}
+<div class="page-content slide" id="main">
+  <div class="wrapper">
+    <div class="painting-page">
+      <div class="painting-page__main-image--wrapper painting-page__main-image--landscape">
+        {{ if .Params.image }}
+          <picture>
+            <source srcset="{{ .Params.image }}" media="(min-width: 1600px)">
+            <source srcset="{{ .Params.image }}" media="(min-width: 1024px)">
+            <source srcset="{{ .Params.image }}">
+            <img src="{{ .Params.image }}" class="painting-page__main-image" alt="{{ .Title }}">
+          </picture>
+        {{ end }}
 
-  <div class="">
-    <h1 class="">{{.Title}}</h1>
-    <div class="">
-      <p>{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
-      <p>Read in {{ .ReadingTime }} minutes</p>
-    </div>
-    <div class="cms mw6">
-      <p>{{ .Description }}</p>
-      {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
-      {{ .Content }}
+      </div>
+      
+      <h1 class="painting-page__h1 center">{{.Title}}</h1>
+    
+      <div class="painting-page__content-wrapper">
+
+        {{ .Content }}
+
+      </div>
     </div>
   </div>
+</div>
 {{ end }}
