@@ -39,6 +39,20 @@
     transform: translateX(-50%) translateY(-50%);
 }
 
+@media #{$small-and-down} {
+    .hero-banner__background--video video {
+        display: none;
+    }
+    .hero-banner__background--mobile-image {
+        display: inline-block;
+    }
+}
+
+@media #{$medium-and-up} {
+    .hero-banner__background--mobile-image {
+        display: none;
+    }
+}
 .hero-banner .hero-banner__background {
     width: 100%;
     height: 100%;
