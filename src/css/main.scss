@@ -3,6 +3,7 @@
 /* SETTINGS - Global settings / variables such as $blue or $text-heading-size-1   */ 
 
 @import './imports/_settings.global';
+@import './imports/_settings.color';
 
 
 /*  TOOLS - Global Mixins such as font-sizing or media queries  */ 
@@ -34,6 +35,8 @@
 @import './imports/components.video-banner.scss';
 @import './imports/components.button.scss';
 @import './imports/components.painting-page.scss';
+@import './imports/components.footer.scss';
+@import './imports/components.newsletter.scss';
 
 
 

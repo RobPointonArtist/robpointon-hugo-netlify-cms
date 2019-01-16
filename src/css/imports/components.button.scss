@@ -1,5 +1,5 @@
 .btn {
-	background-color: #00569b;
+	background-color: $primary-button-color;
 	color: #fff;
 }
 
@@ -23,5 +23,9 @@
     padding-right: 2rem;
     padding-top: .75rem;
     padding-bottom: .75rem;
+}
+
+.btn--type__secondary {
+    background-color: $grey-color-dark;
 }
 
